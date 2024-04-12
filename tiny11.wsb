@@ -1,0 +1,34 @@
+<Configuration>
+  <Metadata>
+    <Name>MyDemo</Name>
+    <Author>JoelVanEenwyk</Author>
+    <Description>A demo WSB configuration</Description>
+    <Updated>04/11/2024 17:25:34</Updated>
+  </Metadata>
+  <vGPU>Default</vGPU>
+  <MemoryInMB>2048</MemoryInMB>
+  <AudioInput>Default</AudioInput>
+  <VideoInput>Default</VideoInput>
+  <ClipboardRedirection>Default</ClipboardRedirection>
+  <PrinterRedirection>Disable</PrinterRedirection>
+  <Networking>Default</Networking>
+  <ProtectedClient>Default</ProtectedClient>
+  <LogonCommand>
+    <Command>c:\data\tiny11.bat</Command>
+  </LogonCommand>
+  <MappedFolders>
+    <MappedFolder>
+      <HostFolder>M:\projects\windows-tiny11-builder</HostFolder>
+      <SandboxFolder>c:\data</SandboxFolder>
+      <ReadOnly>True</ReadOnly>
+    </MappedFolder>
+    <MappedFolder>
+      <HostFolder>D:\downloads</HostFolder>
+      <SandboxFolder>c:\downloads</SandboxFolder>
+      <ReadOnly>True</ReadOnly>
+    </MappedFolder>
+  </MappedFolders>
+  <LogonCommand>
+    <Command>C:\data\sandbox_setup.bat</Command>
+  </LogonCommand>
+</Configuration>
